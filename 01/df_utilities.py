@@ -6,7 +6,7 @@ import pandas as pd
 names = ["Date","time_zone",'discharge',"gage_height"]
 
 # Loading the data
-df = pd.read_csv("data.csv",skiprows=32,delimiter='\t',names=names,usecols=[2,3,4,6])
+df = pd.read_csv("https://raw.githubusercontent.com/Dudgit/dataExplore/main/01/data.csv",skiprows=32,delimiter='\t',names=names,usecols=[2,3,4,6])
 
 def lookup(date_pd_series, format=None):
     """
